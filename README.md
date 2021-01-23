@@ -18,10 +18,10 @@ let p = document.querySelector("p")
 let originalStr = getSecretStr(p.innerHTML) // 'hello world!
 ```
 
-- ####Before
-  ![](https://www.google.com/url?sa=i&url=https%3A%2F%2Farchive.gulte.com%2Fmovienews%2F78502%2FWaiting-for-Ismart-Shankar-video-songs&psig=AOvVaw1SAd7LBjCvbKw1wCWqoGvH&ust=1611519289975000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJChkKvvsu4CFQAAAAAdAAAAABAP)
-- ####After
-  ![](https://drive.google.com/uc?export=view&id=1my4kyhM51xePe4_otAilH6Xz-SKF4I_Q)
+- Before:
+  ![before](https://user-images.githubusercontent.com/57875019/105613212-67beb980-5dd2-11eb-8a4c-6714f88da0cd.png)
+- After:
+  ![after](https://user-images.githubusercontent.com/57875019/105613210-668d8c80-5dd2-11eb-81e1-999244b2751b.png)
 
 ## API
 
