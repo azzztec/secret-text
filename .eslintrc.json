@@ -2,7 +2,8 @@
   "extends": ["airbnb-base", "prettier", "plugin:jest/recommended"],
   "plugins": ["prettier", "jest"],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "no-underscore-dangle": "off"
   },
   "env": {
     "browser": true
