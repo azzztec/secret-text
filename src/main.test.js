@@ -39,7 +39,7 @@ describe("Check secret strings that was made", () => {
 describe("Check original string that converted from secret string", () => {
   beforeAll(() => {
     window.customDivForTest = document.createElement("div")
-    window.customDivForTest.innerHTML = "some existed text" + config.test.ORIGINAL_SECRET_STR
+    window.customDivForTest.innerHTML = `some existed text${config.test.ORIGINAL_SECRET_STR}`
   })
 
   test("Should return original string", () => {

@@ -2,7 +2,7 @@
   "name": "secret-text",
   "version": "1.0.0",
   "description": "Encode any string to non-printable symbols",
-  "main": "main.js",
+  "main": "dist/main.js",
   "keywords": [
     "string",
     "hide",
@@ -15,7 +15,7 @@
   "author": "azzztec",
   "license": "MIT",
   "files": [
-    "dist"
+    "./dist"
   ],
   "repository": {
     "type": "git",
