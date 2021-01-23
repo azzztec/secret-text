@@ -1,4 +1,4 @@
-import { makeSecretStr, readSecretStr } from "./main.js"
+import { makeSecretStr, getSecretStr } from "./main.js"
 import config from "./config.json"
 
 describe("Check secret strings that was made", () => {
@@ -43,6 +43,6 @@ describe("Check original string that converted from secret string", () => {
   })
 
   test("Should return original string", () => {
-    expect(readSecretStr(window.customDivForTest.innerHTML)).toMatch(config.test.ORIGINAL_STR)
+    expect(getSecretStr(window.customDivForTest.innerHTML)).toMatch(config.test.ORIGINAL_STR)
   })
 })

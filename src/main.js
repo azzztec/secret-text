@@ -63,7 +63,7 @@ const _fromASCIItoBinary = (asciiList) => {
   })
 }
 
-const readSecretStr = (str) => {
+const getSecretStr = (str) => {
   const nonASCIIcharactersCorrectCodeList = _takeSymbolsFromText(str)
   const binaryList = _fromASCIItoBinary(nonASCIIcharactersCorrectCodeList)
   const originalStr = binaryList.reduce((prev, binaryStr) => {
@@ -73,4 +73,4 @@ const readSecretStr = (str) => {
   return originalStr
 }
 
-export { makeSecretStr, readSecretStr }
+export { makeSecretStr, getSecretStr }
