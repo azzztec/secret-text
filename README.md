@@ -9,13 +9,15 @@ Hide any text without visible changes inside HTML DOM Node and get it back when 
 ## Examples
 
 ```javascript
+import { makeSecretStr, getSecretStr } from "secret-text"
+
 //insert secret string inside existing DOM element
 let p = document.querySelector("p")
 p.innerHTML += makeSecretStr("hello world!")
 
 //get secret string from existing DOM element
 let p = document.querySelector("p")
-let originalStr = getSecretStr(p.innerHTML) // 'hello world!
+let originalStr = getSecretStr(p.innerHTML) // 'hello world!'
 ```
 
 - Before:
