@@ -4,7 +4,7 @@ Hide any text without visible changes inside HTML DOM Node and get it back when 
 
 ## Download
 
-> `npm i secret-text`
+> `npm i -D secret-text`
 
 ## Examples
 
