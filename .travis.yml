@@ -1,6 +1,4 @@
-sudo: false
-
-language: node.js
+language: node_js
 
 node_js:
   - node
@@ -9,5 +7,5 @@ script:
   - npm run lint
   - npm run test:coveralls
 
-nofications:
+notifications:
   email: false
