@@ -7,20 +7,20 @@ Hide any text without visible changes inside HTML DOM Node and get it back when 
 
 ## Download
 
-> `npm i -D secret-text`
+> npm i -D secret-text`
 
 ## Examples
 
 ```javascript
-import { makeSecretStr, getSecretStr } from "secret-text"
+import secretText from "secret-text"
 
 //insert secret string inside existing DOM element
 let p = document.querySelector("p")
-p.innerHTML += makeSecretStr("hello world!")
+p.innerHTML += secretText.makeSecretStr("hello world!")
 
 //get secret string from existing DOM element
 let p = document.querySelector("p")
-let originalStr = getSecretStr(p.innerHTML) // 'hello world!'
+let originalStr = secretText.getSecretStr(p.innerHTML) // 'hello world!'
 ```
 
 - Before:

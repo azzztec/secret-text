@@ -1,19 +1,19 @@
-import resolve from '@rollup/plugin-node-resolve';
-import babel from '@rollup/plugin-babel';
-import json from '@rollup/plugin-json';
+import json from "@rollup/plugin-json"
+import typescript from "rollup-plugin-typescript2"
 
-export default {
-  input: 'src/main.js',
-  output: {
-    file: './dist/main.js',
-    format: 'cjs',
-    name: 'bundle'
+export default [
+  {
+    input: "src/main.ts",
+    output: {
+      file: "./dist/main.js",
+      format: "cjs",
+      name: "bundle",
+    },
+    plugins: [
+      typescript(),
+      json({
+        compact: true,
+      }),
+    ],
   },
-  plugins: [
-    resolve(),
-    babel({ babelHelpers: 'bundled' }),
-    json({
-      compact: true
-    })
-  ]
-};
+]

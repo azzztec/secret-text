@@ -1,11 +1,27 @@
 {
-  "extends": ["airbnb-base", "prettier", "plugin:jest/recommended"],
-  "plugins": ["prettier", "jest"],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-typescript/base",
+    "eslint-config-prettier",
+    "plugin:jest/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "prettier"
+  ],
+  "plugins": ["prettier", "jest", "@typescript-eslint"],
   "rules": {
     "prettier/prettier": ["error"],
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "no-control-regex": "off",
+    "no-return-assign": "off",
+    "no-param-reassign": "off"
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
   }
 }

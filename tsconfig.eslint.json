@@ -1,0 +1,5 @@
+{
+  "parserOptions": {
+    "extends": ["airbnb-typescript/base", "eslint-config-prettier"]
+  }
+}
