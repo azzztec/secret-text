@@ -1,6 +1,6 @@
 {
   "name": "secret-text",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Encode any string to non-printable symbols",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
