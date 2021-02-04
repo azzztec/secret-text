@@ -7,7 +7,7 @@ Hide any text without visible changes inside HTML DOM Node and get it back when 
 
 ## Download
 
-> npm i -D secret-text`
+> npm i -D secret-text
 
 ## Examples
 
@@ -30,7 +30,7 @@ let originalStr = secretText.getSecretStr(p.innerHTML) // 'hello world!'
 
 ## API
 
-| Function              | Argument Type | Return Type | Description                                     |
+| Method                | Argument Type | Return Type | Description                                     |
 | --------------------- | ------------- | ----------- | ----------------------------------------------- |
 | makeSecretStr( text ) | string        | string      | Return original text with secret string inside. |
 | getSecretStr( text )  | string        | string      | Return secret string from received text.        |
