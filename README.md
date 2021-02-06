@@ -16,10 +16,10 @@ import secretText from "secret-text"
 
 //insert secret string inside existing DOM element
 let div = document.querySelector("div")
-div.innerHTML += secretText.makeSecretStr("hello world!")
+div.innerHTML += secretText.makeSecretText("hello world!")
 
 //get secret string from existing DOM element
-let originalStr = secretText.getSecretStr(div.innerHTML) // 'hello world!'
+let originalStr = secretText.getSecretText(div.innerHTML) // 'hello world!'
 ```
 
 - Before:
@@ -29,7 +29,7 @@ let originalStr = secretText.getSecretStr(div.innerHTML) // 'hello world!'
 
 ## API
 
-| Method                | Argument Type | Return Type | Description                                               |
-| --------------------- | ------------- | ----------- | --------------------------------------------------------- |
-| makeSecretStr( text ) | string        | string      | Returns secret text encrypted with non-printable symbols. |
-| getSecretStr( text )  | string        | string      | Returns secret text from received text.                   |
+| Method                 | Argument Type | Return Type | Description                                               |
+| ---------------------- | ------------- | ----------- | --------------------------------------------------------- |
+| makeSecretText( text ) | string        | string      | Returns secret text encrypted with non-printable symbols. |
+| getSecretText( text )  | string        | string      | Returns secret text from received text.                   |
