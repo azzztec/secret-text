@@ -15,12 +15,11 @@ Hide any text without visible changes inside HTML DOM Node and get it back when 
 import secretText from "secret-text"
 
 //insert secret string inside existing DOM element
-let p = document.querySelector("p")
-p.innerHTML += secretText.makeSecretStr("hello world!")
+let div = document.querySelector("div")
+div.innerHTML += secretText.makeSecretStr("hello world!")
 
 //get secret string from existing DOM element
-let p = document.querySelector("p")
-let originalStr = secretText.getSecretStr(p.innerHTML) // 'hello world!'
+let originalStr = secretText.getSecretStr(div.innerHTML) // 'hello world!'
 ```
 
 - Before:
@@ -30,7 +29,7 @@ let originalStr = secretText.getSecretStr(p.innerHTML) // 'hello world!'
 
 ## API
 
-| Method                | Argument Type | Return Type | Description                                     |
-| --------------------- | ------------- | ----------- | ----------------------------------------------- |
-| makeSecretStr( text ) | string        | string      | Return original text with secret string inside. |
-| getSecretStr( text )  | string        | string      | Return secret string from received text.        |
+| Method                | Argument Type | Return Type | Description                                               |
+| --------------------- | ------------- | ----------- | --------------------------------------------------------- |
+| makeSecretStr( text ) | string        | string      | Returns secret text encrypted with non-printable symbols. |
+| getSecretStr( text )  | string        | string      | Returns secret text from received text.                   |
