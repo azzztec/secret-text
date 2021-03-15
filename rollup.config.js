@@ -6,7 +6,7 @@ export default [
     input: "src/main.ts",
     output: {
       file: "./dist/main.js",
-      format: "cjs",
+      format: "umd",
       name: "bundle",
     },
     plugins: [
