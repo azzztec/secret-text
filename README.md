@@ -1,5 +1,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/azzztec/secret-text/badge.svg?branch=main)](https://coveralls.io/github/azzztec/secret-text?branch=main)
 [![Build Status](https://www.travis-ci.com/azzztec/secret-text.svg?branch=main)](https://www.travis-ci.com/azzztec/secret-text)
+![npm](https://img.shields.io/npm/v/secret-text)
 
 # Secret-Text
 
